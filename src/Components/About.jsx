@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import aboutMe from "../assets/About Me-Potrait.jpg";
+import aboutMe from "../assets/Ghibli.png";
 import {
   LinkIcon,
   CheckCircleIcon,
@@ -27,7 +27,7 @@ const About = () => {
         <div className="w-full md:w-5/12 flex flex-col gap-2 border-2 border-amber-500  shadow-md p-2 rounded-2xl">
           <h1 className="font-medium text-amber-500">Digital Presence</h1>
           <a
-            href="https://www.linkedin.com/in/yaswanth-sk"
+            href="http://linkedin.com/in/dhanush-balireddy"
             target="blank"
             className="flex justify-between border-2 border-amber-500 rounded-lg p-2"
           >
@@ -56,18 +56,22 @@ const About = () => {
             About Me
           </h1>
           <p className="md:text-justify">
-            I am a Computer Science Engineering graduate (2023) with a strong
-            foundation in frontend development, UI/UX, and scalable web
-            solutions. Proficient in React JS, JavaScript, Tailwind CSS, and API
-            integration, I specialize in crafting interactive and
-            high-performance web applications.
+            Hi, I’m Appala Dhanush Balireddy, a Data Analytics Engineering
+            graduate student at George Mason University with hands-on experience
+            in building scalable data pipelines, cloud-based systems, and
+            AI-driven automation. I enjoy working at the intersection of data,
+            cloud, and engineering, where I can turn complex datasets into
+            real-time, high-performance solutions. I have experience with
+            Python, SQL, AWS, distributed architecture, and automation, and I’ve
+            worked on projects involving microservices, real-time processing,
+            and intelligent transaction systems.
           </p>
           <p className="md:text-justify -mt-2">
-            In addition to front-end development, I hold PEGA CSA & CSSA
-            certifications, showcasing my expertise in building low-code
-            enterprise applications. My technical skills, problem-solving
-            mindset, and dedication to continuous learning allow me to adapt
-            quickly to new challenges.
+            I’m passionate about designing systems that scale, automate, and
+            deliver meaningful insights, whether it’s through cloud
+            infrastructure, data engineering, or machine learning integrations.
+            I enjoy learning new technologies, contributing to communities, and
+            solving problems that challenge both logic and creativity.
           </p>
           <div>
             <span className="p-2 font-medium border-2 border-amber-500 text-amber-500 rounded-2xl flex items-center gap-3 w-fit">

@@ -46,32 +46,16 @@ const Skills = () => {
       }
     };
   }, []);
-  const skills = [
-    { name: "JavaScript", progress: 65 },
-    { name: "React JS", progress: 60 },
-    { name: "Tailwind CSS", progress: 80 },
-    { name: "HTML5", progress: 95 },
-    { name: "CSS3", progress: 90 },
-    { name: "Python", progress: 75 },
-    { name: "MySQL", progress: 60 },
-    { name: "Pega", progress: 50 },
-  ];
-  const filteredList = skills.filter(
-    (skill) =>
-      skill.name === "JavaScript" ||
-      skill.name === "React JS" ||
-      skill.name === "Tailwind CSS" ||
-      skill.name === "HTML5" ||
-      skill.name === "CSS3"
-  );
-
-  const avgPercentage =
-    filteredList.reduce((sum, skill) => sum + skill.progress, 0) /
-    filteredList.length;
-
-  // const dynamicDegree = 360 * (avgPercentage / 100);
-
-  const skillNames = ["React JS", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"];
+const skills = [
+  { name: "Python", progress: 80 },
+  { name: "SQL", progress: 75 },
+  { name: "Data Analytics", progress: 85 },
+  { name: "ETL & Data Pipelines", progress: 90 },
+  { name: "Cloud Computing (AWS)", progress: 85 },
+  { name: "Docker", progress: 70 },
+  { name: "Power BI", progress: 65 },
+  { name: "Tableau", progress: 55 },
+];
 
   return (
     <div id="skills" ref={sectionRef} className="min-h-screen mx-auto mt-[25%]  md:mt-0 scroll-m-25 w-10/12">
@@ -93,32 +77,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col flex-1 items-center">
-          <div className="flex gap-2 items-end">
-            <div className={`w-60 h-70 overflow-hidden flex items-end rounded-lg shadow-lg ${borderClr ? "border border-gray-500" : "border border-gray-300" }`}>
-              <div
-                className="w-60  bg-amber-500 transition-all duration-1000 ease-out"
-                style={{ height: isVisible ? `${avgPercentage}%` : "0%" }}
-              ></div>
-            </div>
-            <div
-              className="h-70 transition-all duration-800 ease-in flex items-center"
-              style={{ transform: isVisible ? `translateY(${avgPercentage - 100}%)` : "translateY(0%)" }}
-            >
-              {isVisible ? `${avgPercentage}%` : ""}
-            </div>
-          </div>
-          <div>
-            <h1 className="font-medium text-xl md:text-2xl my-5">
-              "Front-End Web Development"
-            </h1>
-            <div className="font-normal text-xl flex items-center my-3">
-              The % is Average of <TypingEffect string={skillNames} />
-            </div>
-          </div>
-        </div>
-      </div>
-      
+      </div>  
     </div>
   );
 };

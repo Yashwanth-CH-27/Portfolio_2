@@ -1,14 +1,10 @@
 import { ForwardIcon } from "@heroicons/react/24/solid";
 import {
-  netflixUrl,
-  netflixDes,
-  dineDashUrl,
-  dineDashDes,
-  portfolioUrl,
-  portfolioDes,
-  instaCloneUrl,
-  instaCloneDes,
+  launchHostDes,
+  tpsDes
 } from "../utils/constants";
+import LaunchHost from "../assets/LaunchHost.png"
+import TPS from "../assets/TPS.png"
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
@@ -17,7 +13,7 @@ const ProjectStructure = ({ name, description, image, tech, type }) => {
   const maxLength = 130;
   const borderClr = useSelector(store => store.theme.theme)
   return (
-    <div>
+    <div className="">
       <div className={`rounded-lg p-4 shadow-lg ${borderClr ? "border border-gray-800" : "border border-gray-200" }`}>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
@@ -54,33 +50,20 @@ const ProjectStructure = ({ name, description, image, tech, type }) => {
 const Projects = () => {
   const projectArr = [
     {
-      name: "Netflix-Groq",
-      description: netflixDes,
-      url: netflixUrl,
-      tech: "React JS, JavaScript, JSX & Tailwind CSS",
-      type: "Entertainment",
+      name: "Launch Host – Scalable Cloud Hosting Platform",
+      description: launchHostDes,
+      url: LaunchHost,
+      tech: "JavaScript, Next.js, Docker, AWS ECS, AWS S3, CDN, Kafka, Redis, ClickHouse, Nginx (Reverse Proxy)",
+      type: "Cloud",
     },
     {
-      name: "Dine-Dash(Swiggy Clone)",
-      description: dineDashDes,
-      url: dineDashUrl,
-      tech: "React JS, JavaScript, JSX & Tailwind CSS",
-      type: "Food-Delivery",
+      name: "AI-Driven Transaction Processing System",
+      description: tpsDes,
+      url: TPS,
+      tech: "Python, AWS DynamoDB, OpenAI API, OCR Models, AWS Lambda, Node.js",
+      type: "FinTech",
     },
-    {
-      name: "Portfolio",
-      description: portfolioDes,
-      url: portfolioUrl,
-      tech: "React JS, JavaScript, JSX & Tailwind CSS",
-      type: "Personal-Site",
-    },
-    {
-      name: "Instagram Clone",
-      description: instaCloneDes,
-      url: instaCloneUrl,
-      tech: "HTML5, CSS3, JavaScript",
-      type: "Social Media",
-    },
+
   ];
   return (
     <div id="projects" className="min-h-screen py-10 mx-auto  scroll-mt-20 w-10/12  md:mb-15">
