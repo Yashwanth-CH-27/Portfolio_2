@@ -4,66 +4,18 @@ import { useSelector } from "react-redux";
 const Contact = () => {
   const borderClr = useSelector((store) => store.theme.theme);
   return (
-    <div id="contact" className="w-10/12 md:w-6/12 mx-auto min-h-screen py-10 scroll-m-25">
+    <div id="contact" className="w-10/12 md:w-6/12 mx-auto h-[500px] mt-5 py-10 scroll-m-25">
         <div className={`rounded-2xl p-4 shadow-lg ${borderClr ? "border border-gray-700" : "border border-gray-200" }`}>
-        <h1 className="flex items-center gap-2 text-2xl font-bold mb-5">
+        <h1 className="flex items-center gap-2 text-2xl font-bold mb-5 justify-center">
         <span className="h-5 w-5">
           <ForwardIcon />
         </span>
-        Contact
+        Contact Me
       </h1>
-      <form
-        action="https://formspree.io/f/xwplrqly"
-        method="POST"
-        className="flex flex-col gap-10 p-2"
-      >
-        <div
-          className={`rounded-2xl p-2 shadow-md ${
-            borderClr ? "border border-gray-700" : "border border-gray-200"
-          }`}
-        >
-          Your Name:{" "}
-          <input
-            className="w-10/12 mx-1 outline-none p-2"
-            type="text"
-            placeholder="Enter your name"
-            name="name"
-          ></input>
-        </div>
-        <div
-          className={`rounded-2xl p-2 shadow-md ${
-            borderClr ? "border border-gray-700" : "border border-gray-200"
-          }`}
-        >
-          Your Email:
-          <input
-            className="w-10/12 mx-1 outline-none p-2"
-            type="email"
-            placeholder="Enter your email"
-            name="email"
-          ></input>
-        </div>
-        <div
-          className={`flex rounded-2xl p-2 shadow-md ${
-            borderClr ? "border border-gray-700" : "border border-gray-200"
-          }`}
-        >
-          Message:
-          <textarea
-            className="w-10/12 h-20 outline-none mx-3"
-            type="text"
-            placeholder="Enter your Message"
-            name="message"
-          ></textarea>
-        </div>
-        <button
-          className={`bg-amber-500 rounded-2xl p-2 shadow-md ${
-            borderClr ? "border border-gray-700" : "border border-gray-200"
-          }`}
-        >
-          Send
-        </button>
-      </form>
+      <div className="flex flex-col gap-4 text-center">
+      <h1 className="font-bold">Email: <span className="font-normal">abalired@gmu.edu</span></h1>
+      <h1 className="font-bold">Linked In: <span className="font-normal">http://linkedin.com/in/dhanush-balireddy</span></h1>
+      </div>
         </div>
 
     </div>

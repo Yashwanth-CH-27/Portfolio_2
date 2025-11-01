@@ -73,7 +73,7 @@ const Projects = () => {
         </span>
         Projects
       </h1>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="flex flex-col gap-10">
         {projectArr.map((project) => (
           <div key={project.name} className="">
             <ProjectStructure
