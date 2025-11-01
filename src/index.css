@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+:root {
+    --bg-color: #ffffff !important;
+    --text-color: #000000 !important;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #111827 !important;
+    --text-color: #ffffff !important;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
