@@ -32,7 +32,7 @@ const Home = () => {
 
         <div className="mt-7 flex justify-center md:justify-start">
           <a
-            href="/public/Dhanush_Portfolio.pdf"
+            href="/Dhanush_Portfolio.pdf"
             download={"Dhanush-Resume"}
             className="border-2 border-amber-500 shadow-md text-amber-500 font-medium px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-amber-500 hover:text-white transition-all"
           >
